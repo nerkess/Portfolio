@@ -1,0 +1,46 @@
+.bg-box {
+    margin: 0;
+    position: absolute;
+    box-shadow: 0 0 20px;}
+
+.left {
+    top: 0;
+    left: 0;}
+
+.right {
+    bottom: 0;
+    right: 0;}
+
+.angle-box-one{
+    height: 13rem;
+    width: 28rem;
+    z-index: 3;
+    transform: rotateZ(135deg) translateX(5rem) translateY(8rem);
+    background-color: var(--two);}
+
+.angle-box-two{
+    height: 10rem;
+    width: 48rem;
+    z-index: 2;
+    transform: rotateZ(135deg) translateX(13rem) translateY(3rem);
+    background-color: var(--three);}
+
+.angle-box-three{
+    height: 6rem;
+    width: 58rem;
+    z-index: 1;
+    transform: rotateZ(135deg) translateX(18rem) translateY(-2rem);
+    background-color: var(--four);}
+
+.angle-box-four{
+    height: 6rem;
+    width: 20rem;
+    transform: rotateZ(135deg) translateX(-5rem) translateY(-4rem);
+    background-color: var(--three);}
+
+.angle-box-five{
+    height: 6rem;
+    width: 11rem;
+    transform: rotateZ(135deg) translateX(-2rem) translateY(-5rem);
+    background-color: var(--two);}
+

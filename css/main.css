@@ -1,0 +1,64 @@
+:root {
+    --one: #f8ffe5;
+    --two: #06d6a0;
+    --three: #1b9aaa;
+    --four: #ef476f;
+    --five: #ffc43d;}
+
+body, html{
+    height: 100%;
+    margin: 0;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 200;
+    font-size: 1rem;}
+
+.home{
+    height: 100%;
+    width: 100%;
+    background-color: var(--one);
+    overflow: hidden;
+    position: relative;}
+
+.portrait{
+    width: 80%;
+    height: 50%;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 4;
+}
+
+img{
+    width: 100%;
+    height: auto;}
+
+.photo{
+    width: 20rem;
+    border-radius: 50%;
+    background-size: cover;
+    border: 5px solid var(--three);}
+
+.welcome-text {
+    width: auto;
+    background-color: var(--five);
+}
+
+.bio{
+    height: 5rem;
+    width: 100%;
+    background-color: var(--two);}
+
+
+
+/*******FOOTER********************************************/
+footer{
+    background-color: var(--three);
+    display: flex;
+    justify-content: center;}
+
+footer p{
+    margin: 1rem;
+    color: var(--one);}
