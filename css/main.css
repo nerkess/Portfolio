@@ -1,4 +1,5 @@
 :root {
+    --text-color: #00303F;
     --one: #f8ffe5;
     --two: #06d6a0;
     --three: #1b9aaa;
@@ -21,15 +22,19 @@ body, html{
 
 .portrait{
     width: 80%;
-    height: 50%;
+    height: 20rem;
     position: absolute;
     margin: auto;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
-    z-index: 4;
-}
+    z-index: 4;}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;}
 
 img{
     width: 100%;
@@ -37,14 +42,16 @@ img{
 
 .photo{
     width: 20rem;
+    height: 20rem;
     border-radius: 50%;
     background-size: cover;
     border: 5px solid var(--three);}
 
 .welcome-text {
-    width: auto;
-    background-color: var(--five);
-}
+    width: 50%;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--text-color);}
 
 .bio{
     height: 5rem;
