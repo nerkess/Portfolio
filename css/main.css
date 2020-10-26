@@ -13,10 +13,49 @@ body, html{
     font-weight: 200;
     font-size: 1rem;}
 
-.home{
+/*******HEADER********************************************/
+header{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--two);
+    z-index: 1;}
+
+nav{width: 60%;}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;}    
+
+li{
+    margin: 0 1rem;
+    font-weight: 700;}
+
+li a:link, li a:visited{
+    text-decoration: none;
+}
+
+li:hover{cursor: pointer;}
+li:nth-child(1) a:hover{color: var(--one);}
+li:nth-child(2) a:hover{color: var(--three);}
+li:nth-child(3) a:hover{color: var(--four);}
+li:nth-child(4) a:hover{color: var(--five);}
+
+/*********************************************************/
+
+#home h1, #about h1, #projects h1, #contact h1{
+    background-color: var(--five);
+    padding: 1rem;}
+
+#about, #projects, #contact{text-align: center;}
+#home, #about, #projects, #contact{
+    background-color: var(--one);}
+
+#home{
     height: 100%;
     width: 100%;
-    background-color: var(--one);
     overflow: hidden;
     position: relative;}
 
@@ -50,15 +89,21 @@ img{
 .welcome-text {
     width: 50%;
     font-size: 2rem;
-    font-weight: bold;
+    font-weight: 700;
     color: var(--text-color);}
 
-.bio{
-    height: 5rem;
-    width: 100%;
-    background-color: var(--two);}
+.no-margin{margin: 0;}
 
+.projects{
+    display: flex;
+    justify-content: space-evenly;
+}
 
+.projects div{
+    width: 30%;
+    height: 20rem;
+    background-color: #06d6a0;
+}
 
 /*******FOOTER********************************************/
 footer{
