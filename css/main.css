@@ -15,15 +15,15 @@ body, html{
 
 /*********************************************************/
 
-#home h1, #about h1, #projects h1, #contact h1{
+#home h1, #skills h1, #projects h1, #contact h1{
     background-image: linear-gradient(var(--five), var(--one));
     align-self: stretch;
     padding: 5rem 1rem;}
 
-#about, #projects, #contact{
+#skills, #projects, #contact{
     padding-bottom: 5rem;
     text-align: center;}
-#home, #about, #projects, #contact{
+#home, #skills, #projects, #contact{
     background-color: var(--one);}
 
 #home{
@@ -32,7 +32,7 @@ body, html{
     overflow: hidden;
     position: relative;}
 
-#about, #contact{
+#skills, #contact{
     display: flex;
     flex-direction: column;
     align-items: center;
