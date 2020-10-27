@@ -1,0 +1,47 @@
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    column-gap: 3rem;
+}
+
+.skill-container{
+    width: 100%;
+    background-color: #d6d6d6;
+    margin-bottom: 1rem;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skill{
+    padding: 10px;
+    text-align: start;
+}
+
+.html{
+    width: 80%;
+    background-color: var(--two);}
+.css{
+    width: 70%;
+    background-color: var(--three);}
+.angular{
+    width: 50%;
+    background-color: var(--four);}
+.ts{
+    width: 30%;
+    background-color: var(--five);}
+.ui{
+    width: 30%;
+    background-color: var(--four);}
+.xd{
+    width: 30%;
+    background-color: var(--three);}
+
+@media only screen and (max-width: 800px){
+    .grid{
+        display: flex;
+        flex-direction: column;
+    }
+}

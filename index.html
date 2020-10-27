@@ -5,19 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Nerkes Abdullina</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/bg-boxes.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-</head>
+    <script src="https://use.fontawesome.com/160ada3ebb.js"></script></head>
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#projects">PROJECTS</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-            </ul>
+            <div class="menu-icon">
+                <i class="fa fa-bars fa-2x" aria-hidden="true" onclick="openMenu()"></i>
+                <div class="menu-list">
+                    <ul onclick="closeMenu()">
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#projects">PROJECTS</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="menu">
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul> 
+            </div>
         </nav>
     </header>
 
@@ -29,11 +48,11 @@
         <div class="bg-box right angle-box-five"></div>
 
         <div class="portrait flex">
-            <img src="./images/me-green-cube.jpg" class="photo" alt="photo" data-aos="fade-right">
+            <img src="./images/me-green-square.jpg" class="photo" alt="photo" data-aos="fade-right">
             <div class="welcome-text" data-aos="fade-left">
                 <p>Hello!</p> 
                 <p>I am glad you are visiting my portfolio.</p>
-                <p>My name is Nerkes Abdullina. I am a frontend developer.</p>
+                <p>My name is Nerkes Abdullina. I am a Front-End Developer.</p>
             </div>
         </div>
         
@@ -41,24 +60,107 @@
     
     <div id="about">
         <h1 class="no-margin">ABOUT</h1>
+        <div class="grid">
+            <div>
+                <div class="skill-container">
+                    <div class="skill html">
+                        <span>HTML</span>
+                    </div>
+                    <span>80%</span>
+                </div>
+                <div class="skill-container">
+                    <div class="skill css">
+                        <span>CSS/SCSS</span>
+                    </div>
+                    <span>70%</span>
+                </div>
+                <div class="skill-container">
+                    <div class="skill angular">
+                        <span>Angular</span>
+                    </div>
+                    <span>50%</span>
+                </div>
+            </div>
+            <div>
+                <div class="skill-container">
+                    <div class="skill ts">
+                        <span>JS/TS</span>
+                    </div>
+                    <span>30%</span>
+                </div>
+                <div class="skill-container">
+                    <div class="skill ui">
+                        <span>UI/UX</span>
+                    </div>
+                    <span>30%</span>
+                </div>
+                <div class="skill-container">
+                    <div class="skill xd">
+                        <span>Adobe XD</span>
+                    </div>
+                    <span>30%</span>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div id="projects">
         <h1 class="no-margin">PROJECTS</h1>
         <div class="projects">
-            <div ></div>
-            <div></div>
-            <div></div>
+            <div class="container">
+                <div class="hexagon" 
+                data-aos="flip-left">
+                    <p>Coming soon...</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="hexagon" 
+                data-aos="flip-up">
+                    <p>Coming soon...</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="hexagon" 
+                data-aos="flip-right">
+                    <p>Coming soon...</p>
+                </div>
+            </div>
         </div>
     </div>
 
     <div id="contact">
         <h1 class="no-margin">CONTACT</h1>
+        <form action="https://formspree.io/f/xbjponpq" method="POST">
+            <label>
+                <input type="text" name="_replyto" placeholder="Your email">
+            </label>
+            <label>
+                <textarea name="message" placeholder="Your message"></textarea>
+            </label>
+            <button type="submit">Send</button>
+        </form>
     </div>
 
     <footer>
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/nerkes-abdullina-10b792174/">
+                <div class="icon">
+                    <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+                </div>
+            </a>
+            <a href="https://github.com/nerkess/">
+                <div class="icon">
+                    <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+                </div>
+            </a>
+            <a href="https://codepen.io/nerkess/">
+                <div class="icon">
+                    <i class="fa fa-codepen fa-2x" aria-hidden="true"></i>
+                </div>
+            </a>
+        </div>
+        
         <p>Nerkes Abdullina &copy; 2020</p>
-        <!--<a href="mailto:nerkesabdullina1990@gmail.com">nerkesabdullina1990@gmail.com</a>-->
     </footer>
 </body>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

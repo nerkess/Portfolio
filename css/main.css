@@ -13,43 +13,16 @@ body, html{
     font-weight: 200;
     font-size: 1rem;}
 
-/*******HEADER********************************************/
-header{
-    position: absolute;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    background-color: var(--two);
-    z-index: 1;}
-
-nav{width: 60%;}
-
-ul{
-    list-style: none;
-    display: flex;
-    justify-content: space-around;}    
-
-li{
-    margin: 0 1rem;
-    font-weight: 700;}
-
-li a:link, li a:visited{
-    text-decoration: none;
-}
-
-li:hover{cursor: pointer;}
-li:nth-child(1) a:hover{color: var(--one);}
-li:nth-child(2) a:hover{color: var(--three);}
-li:nth-child(3) a:hover{color: var(--four);}
-li:nth-child(4) a:hover{color: var(--five);}
-
 /*********************************************************/
 
 #home h1, #about h1, #projects h1, #contact h1{
-    background-color: var(--five);
-    padding: 1rem;}
+    background-image: linear-gradient(var(--five), var(--one));
+    align-self: stretch;
+    padding: 5rem 1rem;}
 
-#about, #projects, #contact{text-align: center;}
+#about, #projects, #contact{
+    padding-bottom: 5rem;
+    text-align: center;}
 #home, #about, #projects, #contact{
     background-color: var(--one);}
 
@@ -58,6 +31,12 @@ li:nth-child(4) a:hover{color: var(--five);}
     width: 100%;
     overflow: hidden;
     position: relative;}
+
+#about, #contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .portrait{
     width: 80%;
@@ -92,25 +71,28 @@ img{
     font-weight: 700;
     color: var(--text-color);}
 
-.no-margin{margin: 0;}
+@media only screen and (max-width: 900px){
+    .portrait{
+        height: auto;
+    }
+    .flex{
+        flex-direction: column;
+        justify-content: center;
+    }
 
-.projects{
-    display: flex;
-    justify-content: space-evenly;
+    .photo{
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .welcome-text{
+        font-size: 1rem;
+        width: 80%;
+        text-align: center;
+        background-color: rgba(255, 255, 255, .15);
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+        margin-top: 1rem;
+        padding: 1rem;
+    }
 }
-
-.projects div{
-    width: 30%;
-    height: 20rem;
-    background-color: #06d6a0;
-}
-
-/*******FOOTER********************************************/
-footer{
-    background-color: var(--three);
-    display: flex;
-    justify-content: center;}
-
-footer p{
-    margin: 1rem;
-    color: var(--one);}
