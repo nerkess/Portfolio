@@ -1,6 +1,5 @@
 # Portfolio
 My personal portfolio web site
-https://nerkess.github.io/Portfolio/
 
 # Font
 https://fonts.google.com/specimen/Montserrat+Alternates - Bold 700
